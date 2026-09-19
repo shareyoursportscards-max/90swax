@@ -77,6 +77,10 @@ h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:0}
 .card .go{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--teal-text)}
 .card.soon{background:var(--bg2)}
 .card.soon .go{color:var(--muted)}
+.card .ico.shirt{background:#fff;border:1px solid var(--border2);color:var(--ink)}
+.vids{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.vids a{display:block;font-size:14px;font-weight:500;color:var(--text);padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--bg2)}
+.vids a:hover{border-color:var(--teal);background:var(--teal-bg)}
 
 /* stats */
 .statband{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding-block:40px}
@@ -111,7 +115,7 @@ footer a{color:var(--text)}
   <a class="brand" href="/">90s<span>Wax</span></a>
   <ul>
     <li><a href="#guides">Price guides</a></li>
-    <li><a href="#kings">Card Kings</a></li>
+    <li><a href="#youtube">YouTube</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#follow">Follow</a></li>
   </ul>
@@ -145,7 +149,7 @@ footer a{color:var(--text)}
   <section id="guides">
     <div class="sec-h">
       <h2>What's here</h2>
-      <p>Three things, all built on real sold listings.</p>
+      <p>Prices, videos, and something to wear.</p>
     </div>
     <div class="grid">
       <a class="card" href="https://griffeycardprices.com/">
@@ -154,17 +158,22 @@ footer a{color:var(--text)}
         <p>Every Griffey card from 1990–1999 with raw, PSA 8, PSA 9 and PSA 10 prices from eBay sales. Base, inserts, refractors, die-cuts, 1/1s.</p>
         <span class="go">griffeycardprices.com →</span>
       </a>
-      <div class="card soon" id="kings">
-        <div class="top"><div class="ico teal">K</div><span class="tag ink">YouTube</span></div>
-        <h3>Card Kings</h3>
-        <p>Who really rules a set? Every star's card from the same product, ranked by what it actually sells for. Griffey vs. Bonds vs. Jeter vs. everybody.</p>
-        <span class="go">Channel coming soon</span>
+      <div class="card" id="youtube">
+        <div class="top"><div class="ico teal">&#9654;</div><span class="tag ink">YouTube</span></div>
+        <h3>90sWax on YouTube</h3>
+        <p>Card Kings rankings, the biggest sales of the week, and rips. Start with the popular ones:</p>
+        <ul class="vids">
+          <li><a href="#" data-video="1">Video title 1 →</a></li>
+          <li><a href="#" data-video="2">Video title 2 →</a></li>
+          <li><a href="#" data-video="3">Video title 3 →</a></li>
+        </ul>
+        <a class="go" href="#" data-social="youtube">Subscribe →</a>
       </div>
-      <div class="card soon">
-        <div class="top"><div class="ico teal">+</div><span class="tag">Next</span></div>
-        <h3>More players</h3>
-        <p>The same price guide, built for the other faces of the decade — key cards and the inserts that actually trade. Frank Thomas is up first.</p>
-        <span class="go">In the works</span>
+      <div class="card soon" id="shop">
+        <div class="top"><div class="ico shirt"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8 3h8l1.5 2.5L21 7l-2 4-2-.8V21H7V10.2L5 11 3 7l3.5-1.5L8 3z"/><path d="M8 3c0 2 1.8 3.2 4 3.2S16 5 16 3"/></svg></div><span class="tag">Soon</span></div>
+        <h3>Retail</h3>
+        <p>Shirts and hats with the 90sWax mark. Original designs, no licensed logos — just the era.</p>
+        <span class="go">Shirts coming soon</span>
       </div>
     </div>
   </section>
