@@ -75,6 +75,12 @@ h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:0}
 .card h3{font-size:17px;font-weight:600;margin:0 0 6px}
 .card p{margin:0;color:var(--muted);font-size:14.5px}
 .card .go{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--teal-text)}
+.yt{position:relative;display:block;margin-top:12px;border-radius:10px;overflow:hidden;border:1px solid var(--border2);aspect-ratio:16/9;background:var(--bg3)}
+.yt img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s}
+.yt:hover img{transform:scale(1.03)}
+.yt-play{position:absolute;inset:0;margin:auto;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--teal);display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.35);border:2px solid var(--teal)}
+.yt-play svg{margin-left:3px}
+.yt-lbl{position:absolute;top:8px;left:8px;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(11,15,18,.85);color:#fff}
 .card.soon{background:var(--bg2)}
 .card.soon .go{color:var(--muted)}
 .card .ico.shirt{background:#fff;border:1px solid var(--border2);color:var(--ink)}
@@ -189,8 +195,13 @@ footer a{color:var(--text)}
       <div class="card" id="youtube">
         <div class="top"><div class="ico teal">&#9654;</div><span class="tag ink">YouTube</span></div>
         <h3>90sWax on YouTube</h3>
-        <p>Card Kings rankings, the biggest sales of the week, and rips. New videos as the sales come in.</p>
-        <a class="go" href="https://www.youtube.com/watch?v=gpv4vXgn9M0" target="_blank" rel="noopener">Watch the latest video →</a>
+        <p>Card Kings rankings, the biggest sales of the week, and rips.</p>
+        <a class="yt" href="https://www.youtube.com/watch?v=gpv4vXgn9M0" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/gpv4vXgn9M0/maxresdefault.jpg" alt="Fleer Pro-Visions Are Quietly Blowing Up" loading="lazy">
+          <span class="yt-play"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="yt-lbl">Latest</span>
+        </a>
+        <a class="go" href="https://www.youtube.com/watch?v=gpv4vXgn9M0" target="_blank" rel="noopener">Fleer Pro-Visions Are Quietly Blowing Up →</a>
       </div>
       <div class="card soon" id="shop">
         <div class="top"><div class="ico shirt"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8 3h8l1.5 2.5L21 7l-2 4-2-.8V21H7V10.2L5 11 3 7l3.5-1.5L8 3z"/><path d="M8 3c0 2 1.8 3.2 4 3.2S16 5 16 3"/></svg></div><span class="tag">Soon</span></div>
