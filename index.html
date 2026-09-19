@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90sWax — 90s Baseball Cards: Prices, Sales, Nostalgia</title>
+<meta name="description" content="90sWax covers 90s baseball cards — real eBay sold prices, the biggest sales of the week, and the inserts, refractors and rookies you pulled as a kid. Home of the Ken Griffey Jr. price guide and Card Kings.">
+<link rel="canonical" href="https://90swax.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="90sWax — 90s Baseball Cards">
+<meta property="og:description" content="Real prices, big sales, and the cards you had in a shoebox.">
+<meta property="og:url" content="https://90swax.com/">
+<meta property="og:image" content="https://90swax.com/og.png">
+<meta name="theme-color" content="#0b0f12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f12;--surface:#14191f;--surface2:#1a2129;--border:rgba(255,255,255,.08);--teal:#2fe6c7;--gold:#e9c464;--text:#e5e7eb;--dim:#9ca3af;--lime:#c8f542}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;
+  background-image:
+    repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 1px,transparent 1px 7px),
+    repeating-linear-gradient(-45deg,rgba(0,0,0,.18) 0 1px,transparent 1px 7px),
+    linear-gradient(180deg,#0b0f12 0%,#0e1316 50%,#0b0f12 100%)}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(11,15,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:Anton,Impact,sans-serif;font-size:26px;letter-spacing:.02em;color:#fff;text-decoration:none}
+.brand span{color:var(--gold)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px}
+.nav li a{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.nav li a:hover{color:var(--teal);text-decoration:none}
+@media(max-width:600px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding-block:84px 60px;text-align:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 0%,rgba(47,230,199,.14),transparent 70%);pointer-events:none}
+.kicker{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(64px,13vw,150px);line-height:.95;margin:0;letter-spacing:.01em;color:#fff;text-shadow:0 6px 0 rgba(0,0,0,.6),0 12px 30px rgba(0,0,0,.6)}
+h1 span{color:var(--gold)}
+.tag{font-size:clamp(18px,2.4vw,24px);color:var(--text);max-width:640px;margin:22px auto 0}
+.tag b{color:var(--teal);font-weight:600}
+.ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:14px 24px;border-radius:999px;border:1px solid var(--teal);color:var(--teal);transition:transform .15s,background .15s}
+.btn:hover{background:rgba(47,230,199,.12);transform:translateY(-1px);text-decoration:none}
+.btn.primary{background:var(--teal);color:#062a25}
+.btn.primary:hover{background:#5cf0d8}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-block:30px 70px}
+@media(max-width:760px){.pillars{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px 24px;position:relative;overflow:hidden;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:rgba(47,230,199,.4)}
+.card .num{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;color:var(--lime);text-transform:uppercase}
+.card h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:34px;margin:8px 0 10px;letter-spacing:.01em;color:#fff}
+.card p{margin:0 0 18px;color:var(--dim)}
+.card .go{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.card.soon{opacity:.75}
+.card.soon .go{color:var(--dim)}
+.badge{display:inline-block;font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);margin-left:8px;vertical-align:middle}
+
+/* stats strip */
+.strip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(20,25,31,.6)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-block:26px;text-align:center}
+@media(max-width:760px){.strip .wrap{grid-template-columns:repeat(2,1fr)}}
+.stat b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:40px;color:var(--teal);line-height:1}
+.stat span{font-family:"Chakra Petch",sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+
+/* about */
+.about{padding-block:70px;max-width:720px}
+.about h2,.follow h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;margin:0 0 14px;color:#fff;letter-spacing:.01em}
+.about h2 span{color:var(--gold)}
+.about p{font-size:18px;color:var(--text);margin:0 0 14px}
+.about p:last-child{color:var(--dim)}
+
+/* follow */
+.follow{padding-block:10px 80px}
+.follow .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.follow .btn{border-color:var(--border);color:var(--text)}
+.follow .btn:hover{border-color:var(--teal);color:var(--teal)}
+.news{margin-top:34px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px}
+.news h3{font-family:"Chakra Petch",sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.news p{margin:0;color:var(--dim)}
+
+footer{border-top:1px solid var(--border);padding-block:28px;color:var(--dim);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer .brand{font-size:20px}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="/">90s<span>Wax</span></a>
+  <ul>
+    <li><a href="#guides">Price Guides</a></li>
+    <li><a href="#kings">Card Kings</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#follow">Follow</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <p class="kicker">Real prices · Big sales · Pure nostalgia</p>
+  <h1>90s<span>Wax</span></h1>
+  <p class="tag">Everything 90s baseball cards. <b>Real eBay sold prices</b>, the biggest sales of the week, and the inserts, refractors and rookies you pulled as a kid.</p>
+  <div class="ctas">
+    <a class="btn primary" href="https://griffeycardprices.com/">Griffey Price Guide</a>
+    <a class="btn" href="#follow">Follow the Feed</a>
+  </div>
+</div></header>
+
+<section class="strip"><div class="wrap">
+  <div class="stat"><b>900+</b><span>Griffey cards tracked</span></div>
+  <div class="stat"><b>199</b><span>Sets, 1990–1999</span></div>
+  <div class="stat"><b>Daily</b><span>eBay sold updates</span></div>
+  <div class="stat"><b>$240K</b><span>Biggest tracked sale</span></div>
+</div></section>
+
+<main class="wrap">
+  <div class="pillars" id="guides">
+    <a class="card" href="https://griffeycardprices.com/">
+      <div class="num">01 · Price Guide</div>
+      <h2>Ken Griffey Jr.</h2>
+      <p>Every Griffey card from 1990–1999 with raw, PSA 8, PSA 9 and PSA 10 prices from real eBay sales, updated daily. Base, inserts, refractors, die-cuts, 1/1s.</p>
+      <span class="go">Open the guide →</span>
+    </a>
+    <div class="card soon" id="kings">
+      <div class="num">02 · Rankings</div>
+      <h2>Card Kings <span class="badge">YouTube</span></h2>
+      <p>Who really rules a set? Every star's cards from the same product, ranked by what they actually sell for. Griffey vs. Thomas vs. Jordan vs. everybody.</p>
+      <span class="go">Channel coming soon</span>
+    </div>
+    <div class="card soon">
+      <div class="num">03 · Next Up</div>
+      <h2>More Players</h2>
+      <p>The same daily-updated price guide, built for the other faces of the decade. Frank Thomas is up first.</p>
+      <span class="go">In the works</span>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <h2>Wax packs had <span>bubble gum</span> in them.</h2>
+    <p>If you remember the smell of a fresh pack, the stick of gum that shattered when you bit it, and the Finest refractor you were terrified to peel — this is for you.</p>
+    <p>90sWax is a price guide and a highlight reel for the cards of the 1990s. No hype, no guesswork: every number comes from a real sold listing, and every week we show you what actually moved.</p>
+    <p>Built by a collector who never stopped.</p>
+  </section>
+
+  <section class="follow" id="follow">
+    <h2>Follow along</h2>
+    <p style="color:var(--dim);margin:0">Biggest sales of the week, spot-the-difference variations, and the occasional shoebox find.</p>
+    <div class="row">
+      <a class="btn" href="#" data-social="instagram">Instagram</a>
+      <a class="btn" href="#" data-social="youtube">YouTube</a>
+      <a class="btn" href="#" data-social="tiktok">TikTok</a>
+    </div>
+    <div class="news">
+      <h3>Newsletter</h3>
+      <p>A weekly rundown of what sold and what moved. Signup coming soon.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <a class="brand" href="/">90s<span>Wax</span></a>
+  <div>© <span id="yr">2026</span> 90sWax · <a href="https://griffeycardprices.com/">Griffey Card Prices</a></div>
+</div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
