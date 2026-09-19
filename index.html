@@ -79,9 +79,10 @@ h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:0}
 .card.soon .go{color:var(--muted)}
 
 /* stats */
+.statband{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding-block:40px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
-.stat{border:1px solid var(--border);border-radius:14px;padding:18px 20px;background:#fff}
+.stat{border:1px solid var(--border2);border-radius:14px;padding:18px 20px;background:#fff;box-shadow:0 1px 2px rgba(17,24,39,.04)}
 .stat b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:34px;line-height:1;color:var(--ink);margin-bottom:6px}
 .stat span{font-size:13px;color:var(--muted)}
 
@@ -98,7 +99,7 @@ h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin:0}
 .news div{font-size:14.5px;color:var(--muted)}
 .news div b{display:block;color:var(--text);font-weight:600;font-size:15px;margin-bottom:2px}
 
-footer{border-top:1px solid var(--border);padding-block:24px;color:var(--muted);font-size:13px}
+footer{border-top:1px solid var(--border2);background:var(--bg2);padding-block:24px;color:var(--muted);font-size:13px}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
 footer .brand{font-size:18px}
 footer a{color:var(--text)}
@@ -168,14 +169,16 @@ footer a{color:var(--text)}
     </div>
   </section>
 
-  <section>
+</main>
+<div class="statband"><div class="wrap">
     <div class="stats">
       <div class="stat"><b>900+</b><span>Griffey cards tracked</span></div>
       <div class="stat"><b>199</b><span>Sets, 1990–1999</span></div>
       <div class="stat"><b>Daily</b><span>eBay sold updates</span></div>
       <div class="stat"><b>$240K</b><span>Biggest tracked sale</span></div>
     </div>
-  </section>
+</div></div>
+<main class="wrap">
 
   <section class="about" id="about">
     <h2>Wax packs had <span>bubble gum</span> in them.</h2>
