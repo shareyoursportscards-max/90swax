@@ -169,6 +169,79 @@ footer{border-top:1px solid var(--border2);background:var(--bg2);padding-block:2
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
 footer .brand{font-size:18px}
 footer a{color:var(--text)}
+
+/* ---------- MOCKUP: price-guides section ---------- */
+.mockbar{background:#fdf6e3;border-bottom:1px solid #ecd9a3;color:#b4881f;font-size:13px;font-weight:600;text-align:center;padding:7px 12px}
+
+/* Griffey hero - deliberately the loudest thing on the page */
+.ghero{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:center;
+  background:var(--ink);border:1px solid var(--ink);border-radius:18px;padding:30px 32px;color:#fff;
+  position:relative;overflow:hidden;transition:transform .12s,box-shadow .12s}
+.ghero:hover{transform:translateY(-2px);box-shadow:0 20px 44px -22px rgba(11,15,18,.85)}
+.ghero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(660px 240px at 84% 12%,rgba(47,230,199,.20),transparent 62%)}
+/* min-width:0 or the stat row's min-content forces the grid track past the viewport */
+.ghero .lead{position:relative;z-index:1;min-width:0}
+.gtag{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:5px 11px;border-radius:999px;background:var(--teal);color:var(--ink)}
+.ghero h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(32px,4.4vw,46px);
+  line-height:1;letter-spacing:.02em;margin:14px 0 10px;color:#fff}
+.ghero p{margin:0;color:#c3ccd4;font-size:15.5px;max-width:46ch}
+.gstats{display:flex;gap:26px;flex-wrap:wrap;margin:20px 0 22px;
+  padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.gstats div{display:flex;flex-direction:column}
+.gstats b{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:26px;line-height:1;color:var(--teal)}
+.gstats span{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#8b97a2;margin-top:5px}
+.ggo{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;
+  background:var(--teal);color:var(--ink);padding:12px 22px;border-radius:999px}
+.gslabs{position:relative;z-index:1;display:flex;gap:10px;justify-content:center;align-items:flex-end}
+.gslabs img{width:31%;height:auto;border-radius:5px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.55));transition:transform .2s}
+.gslabs img:nth-child(1){transform:rotate(-7deg) translateY(10px)}
+.gslabs img:nth-child(3){transform:rotate(7deg) translateY(10px)}
+.ghero:hover .gslabs img{transform:translateY(-4px)}
+@media(max-width:820px){.ghero{grid-template-columns:1fr;padding:24px}.gslabs{display:none}}
+@media(max-width:560px){
+  .ghero{padding:22px 20px;border-radius:14px}
+  .gstats{display:grid;grid-template-columns:1fr 1fr;gap:16px 14px}
+  .gstats b{font-size:23px}
+  .ghero p{font-size:15px}
+  .ggo{width:100%;justify-content:center}
+}
+
+/* the other three - small, quiet, clearly the side dish */
+.alsolbl{display:flex;align-items:center;gap:12px;margin:26px 0 12px}
+.alsolbl span{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.alsolbl i{flex:1;height:1px;background:var(--border);display:block}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:760px){.pgrid{grid-template-columns:1fr}}
+/* black like the hero, but a shade lighter so Griffey's pure ink stays the focal point */
+.ptile{display:block;min-width:0;border:1px solid #232b34;border-radius:12px;padding:15px 16px;
+  background:#151b22;color:#fff;transition:border-color .12s,transform .12s,box-shadow .12s}
+.ptile:hover{border-color:rgba(47,230,199,.45);transform:translateY(-2px);box-shadow:0 14px 30px -16px rgba(0,0,0,.8)}
+.ptile .pn{display:flex;align-items:center;gap:11px}
+/* sources are near-square head-and-shoulders, so object-position alone does nothing -
+   each one needs its own zoom/origin to land the face inside the circle */
+.pav{width:52px;height:52px;flex:none;border-radius:50%;overflow:hidden;display:block;
+  background:#0b0f12;border:2px solid rgba(47,230,199,.55)}
+.pav img{width:100%;height:100%;object-fit:cover;display:block}
+.pav.thomas img{transform:scale(1.85);transform-origin:52% 15%}
+.pav.bonds img{transform:scale(1.30);transform-origin:50% 30%}
+.pav.jeter img{transform:scale(1.18);transform-origin:46% 40%}
+.ptile .pnm{min-width:0;flex:1}
+.ptile h4{font-size:16.5px;font-weight:600;margin:0;color:#fff;overflow-wrap:anywhere}
+.ptile .ptag{display:inline-block;margin-top:3px;font-size:10px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;padding:2px 7px;border-radius:5px;
+  background:rgba(255,255,255,.07);color:#8b97a2;border:1px solid rgba(255,255,255,.12)}
+.ptile .ptag.on{background:rgba(47,230,199,.15);color:var(--teal);border-color:rgba(47,230,199,.45)}
+.ptile p{margin:11px 0 0;font-size:13.5px;color:#9aa5af}
+.ptile .pgo{display:inline-block;margin-top:9px;font-size:13px;font-weight:600;color:var(--teal)}
+.ptile.off{background:#101419;border-color:#1c232b}
+.ptile.off .pav{filter:grayscale(1) brightness(1.12);opacity:.85;border-color:rgba(255,255,255,.2)}
+.ptile.off h4{color:#c3ccd4}
+.ptile.off .pgo{color:#6b7783}
+.pnote{margin:14px 0 0;font-size:13.5px;color:var(--muted)}
+.pnote b{color:var(--text);font-weight:600}
+
 </style>
 </head>
 <body>
@@ -176,7 +249,8 @@ footer a{color:var(--text)}
 <nav class="nav"><div class="wrap">
   <a class="brand" href="/">90s<span>Wax</span></a>
   <ul>
-    <li><a href="#guides">Price guides</a></li>
+    <li><a href="#players">Price guides</a></li>
+    <li><a href="#guides">What's here</a></li>
     <li><a href="#youtube">YouTube</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#follow">Follow</a></li>
@@ -212,6 +286,65 @@ footer a{color:var(--text)}
 </div></div>
 
 <main class="wrap">
+
+  <section id="players">
+    <div class="sec-h">
+      <h2>Price guides</h2>
+      <p>Real eBay sold prices, straight from completed listings.</p>
+    </div>
+
+    <a class="ghero" href="https://griffeycardprices.com/">
+      <div class="lead">
+        <span class="gtag">The main guide</span>
+        <h3>Ken Griffey Jr.</h3>
+        <p>Every card he appears on from 1990 to 1999 &mdash; raw prices plus PSA 8, 9 and 10. Set pages, a top 25, recent sales, photos and a collection tracker.</p>
+        <div class="gstats">
+          <div><b>900+</b><span>Cards</span></div>
+          <div><b>199</b><span>Sets</span></div>
+          <div><b>$240K</b><span>Biggest sale</span></div>
+          <div><b>Daily</b><span>Updates</span></div>
+        </div>
+        <span class="ggo">Open the Griffey guide &rarr;</span>
+      </div>
+      <div class="gslabs">
+        <img src="https://griffeycardprices.com/img/cards/1993-finest-refractor-110-griffey-psa10.jpg" alt="1993 Finest Refractor #110 Ken Griffey Jr. PSA 10" loading="lazy">
+        <img src="https://griffeycardprices.com/img/cards/1997-skybox-ex2000-essential-credentials-40-griffey-psa10.jpg" alt="1997 E-X 2000 Essential Credentials #40 Ken Griffey Jr. PSA 10" loading="lazy">
+        <img src="https://griffeycardprices.com/img/cards/1996-select-certified-mirror-gold-47-griffey-psa9.jpg" alt="1996 Select Certified Mirror Gold #47 Ken Griffey Jr. PSA 9" loading="lazy">
+      </div>
+    </a>
+
+    <div class="alsolbl"><span>Also tracking</span><i></i></div>
+
+    <div class="pgrid">
+      <a class="ptile" href="/thomas/">
+        <div class="pn">
+          <span class="pav thomas"><img src="img/players/thomas.png" alt="Frank Thomas" loading="lazy"></span>
+          <div class="pnm"><h4>Frank Thomas</h4><span class="ptag on">Live</span></div>
+        </div>
+        <p>PSA 8, 9 and 10 only. 69 cards across 1998 and 1999, more years loading.</p>
+        <span class="pgo">See prices &rarr;</span>
+      </a>
+      <div class="ptile off">
+        <div class="pn">
+          <span class="pav bonds"><img src="img/players/bonds.png" alt="Barry Bonds" loading="lazy"></span>
+          <div class="pnm"><h4>Barry Bonds</h4><span class="ptag">Soon</span></div>
+        </div>
+        <p>PSA 8, 9 and 10 only. Loading now.</p>
+        <span class="pgo">Coming soon</span>
+      </div>
+      <div class="ptile off">
+        <div class="pn">
+          <span class="pav jeter"><img src="img/players/jeter.png" alt="Derek Jeter" loading="lazy"></span>
+          <div class="pnm"><h4>Derek Jeter</h4><span class="ptag">Soon</span></div>
+        </div>
+        <p>PSA 8, 9 and 10 only. Loading now.</p>
+        <span class="pgo">Coming soon</span>
+      </div>
+    </div>
+
+    <p class="pnote"><b>These three run off the Griffey set list.</b> If a set isn't tracked in the Griffey guide, it isn't in theirs &mdash; and they carry graded sales only, refreshed monthly rather than daily.</p>
+  </section>
+
   <section id="guides">
     <div class="sec-h">
       <h2>What's here</h2>
