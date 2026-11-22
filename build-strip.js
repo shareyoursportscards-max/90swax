@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const GRIFFEY = path.join(__dirname, '..', 'griffey-cards');
-const SITE = 'https://griffeycardprices.com';
+const SITE = '/griffey';
 const N = 24;
 
 const src = fs.readFileSync(path.join(GRIFFEY, 'index.html'), 'utf8');

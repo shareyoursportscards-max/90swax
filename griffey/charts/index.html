@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1H6EWY4GJJ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1H6EWY4GJJ');</script>
+<script>function trackEvent(n,p){try{gtag("event",n,p||{});}catch(e){}}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>Ken Griffey Jr. Card Price Charts | Sales History by Card</title>
+<meta name="description" content="Interactive price history charts for 910 Ken Griffey Jr. cards from 1990-1999. Pick a year, set and card to see every tracked eBay sold price for raw, PSA 8, PSA 9 and PSA 10 over time.">
+<link rel="canonical" href="https://90swax.com/griffey/charts/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Griffey Card Prices">
+<meta property="og:title" content="Ken Griffey Jr. Card Price Charts | Sales History by Card">
+<meta property="og:description" content="Interactive price history charts for 910 Ken Griffey Jr. cards from 1990-1999. Pick a year, set and card to see every tracked eBay sold price for raw, PSA 8, PSA 9 and PSA 10 over time.">
+<meta property="og:url" content="https://90swax.com/griffey/charts/">
+<meta property="og:image" content="https://90swax.com/griffey/img/og/market-reports.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/griffey/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/griffey/favicon-96.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@500;600;700&family=Inter+Tight:wght@400;500;600;700&family=Newsreader:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f12;--surface:#14191f;--border:rgba(255,255,255,.08);--gold:#2fe6c7;--text:#e5e7eb;--dim:#9ca3af;
+--price:#e5e7eb;--price-stale:#5c6b7d;--pop:#e9c464;--pop-dim:#9c8140;
+--lbg:#faf7f1;--ltext:#3d362c;--ldim:#8c8172;--lborder:#e8e0d1;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);background-image:linear-gradient(180deg,#0b0f12 0%,#0e1316 50%,#0b0f12 100%);
+color:var(--text);font-family:'Inter Tight',sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 44px}
+.home{display:inline-block;color:var(--gold);text-decoration:none;font-size:13px;letter-spacing:.5px;margin-bottom:18px;padding:7px 14px;border:1px solid var(--border);border-radius:10px;transition:border-color .15s ease}
+.home:hover{border-color:var(--gold)}
+.tblwrap{margin:6px 0 4px}
+.theadwrap{overflow:hidden;position:sticky;top:0;z-index:4;background:var(--bg)}
+.theadwrap .ptable{margin:0;min-width:560px}
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scrollx .ptable{margin:0;min-width:560px}
+.scrollx .mtable{min-width:644px}
+.mtable td{white-space:nowrap}
+.mtable td.cname{white-space:normal}
+/* card name stays pinned while the price columns scroll sideways on phones */
+.ptable{border-collapse:separate;border-spacing:0} /* Safari: sticky cells break under border-collapse:collapse */
+.ptable th:first-child,.ptable td.cname{position:-webkit-sticky;position:sticky;left:0;z-index:2;background:var(--bg)}
+.scrollx .ptable td.cname{box-shadow:1px 0 0 var(--border)}
+.mtable th:nth-child(1),.mtable td:nth-child(1){position:sticky;left:0;background:var(--bg);z-index:2}
+.mtable th:nth-child(2),.mtable td:nth-child(2){position:sticky;left:32px;background:var(--bg);z-index:2;border-right:1px solid var(--border)}
+.bottomnav{margin-top:44px;border-top:1px solid var(--border);padding-top:18px}
+.bn-label{color:var(--dim);font-size:11px;letter-spacing:.8px;text-transform:uppercase}
+h1{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:clamp(22px,4.2vw,30px);letter-spacing:-.02em;line-height:1.15;color:#e9c464;margin:4px 0 6px}
+h2{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:17px;color:var(--text);margin:22px 0 8px;border-bottom:1px solid var(--border);padding-bottom:6px}
+h2 a{color:var(--text);text-decoration:none}h2 a:hover{color:var(--gold)}
+h3{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14.5px;color:var(--text);margin:16px 0 4px}
+.sub{color:var(--dim);font-size:13.5px;line-height:1.55;margin:0 0 14px}
+.answer{color:var(--text);font-size:14px;line-height:1.6;margin:0}
+.intro{margin:0 0 28px;padding-bottom:22px;border-bottom:1px solid var(--border)}
+.faq{margin:8px 0 4px}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:10px;padding:15px 18px;margin:0 0 12px}
+.faq-q{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14.5px;color:var(--text);margin:0 0 6px}
+.faq-a{color:var(--dim);font-size:13.5px;line-height:1.6;margin:0}
+.yearnav{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 8px}
+.yearnav a,.yearnav span{padding:5px 10px;border:1px solid var(--border);border-radius:8px;font-size:12.5px;color:var(--dim);text-decoration:none}
+.yearnav .on{color:var(--gold);border-color:var(--gold)}
+.yearnav a:hover{color:var(--text)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 4px;table-layout:fixed}
+col.codds{width:8%}col.cp{width:10.5%}col.ceb{width:6%}
+td{overflow-wrap:break-word}
+th{text-align:left;color:var(--dim);font-weight:500;font-size:11px;letter-spacing:.8px;text-transform:uppercase;padding:4px 7px;border-bottom:1px solid var(--border);background:var(--bg)}
+td{padding:3px 7px;border-bottom:1px solid rgba(42,58,80,.45)}
+td.cname{color:var(--text)}td.odds{color:var(--dim);font-size:12px}
+td.raw,td.psa8,td.psa9,td.psa10{color:var(--price)}
+td.stale{color:var(--price-stale)}
+.tag{font-size:10px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--pop);background:rgba(233,196,100,.12);border:1px solid rgba(233,196,100,.3);border-radius:999px;padding:2px 8px;margin-left:5px;white-space:nowrap;transition:background .15s ease,transform .15s ease}
+.tag:hover{background:rgba(233,196,100,.2);transform:translateY(-1px)}
+.up{color:#5eeaa0;font-size:10px}.down{color:#ff6b6b;font-size:10px}
+td.raw,td.psa8,td.psa9,td.psa10{position:relative;padding-left:15px}
+.tr{position:absolute;left:2px;top:50%;transform:translateY(-50%);font-size:8px;line-height:1;pointer-events:none}
+th.theb{text-align:center;font-size:10px}
+td.eb{text-align:center;padding-left:0;padding-right:0}
+a.eb{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;color:var(--dim);border:1px solid var(--border);transition:color .15s ease,border-color .15s ease}
+a.eb:hover{color:var(--gold);border-color:var(--gold)}
+.photo-section{margin:34px 0}
+.ps-h{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:19px;color:var(--text);margin:0 0 6px;border-bottom:1px solid var(--border);padding-bottom:10px}
+.ps-sub{font-family:'Newsreader',serif;font-style:italic;color:var(--dim);font-size:14.5px;line-height:1.55;margin:0 0 18px}
+.rptlist{display:flex;flex-direction:column;gap:18px;margin:22px 0 8px}
+.rpt{display:flex;gap:20px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+.rpt-body{flex:1 1 auto;min-width:0}
+.rpt-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+.rpt-year{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;color:var(--gold);text-decoration:none}
+.rpt-year:hover{text-decoration:underline}
+.rpt-date{color:var(--dim);font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+.rpt-text{margin:0;color:var(--text);font-size:14px;line-height:1.65}
+.rpt-more{display:inline-block;margin-top:16px;color:var(--gold);text-decoration:none;font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:16px;letter-spacing:.3px;border:1px solid var(--border);border-radius:10px;padding:10px 18px;background:rgba(47,230,199,.06);transition:border-color .15s ease,background .15s ease}
+.rpt-more:hover{border-color:var(--gold);background:rgba(47,230,199,.13)}
+.rpt-fig{flex:0 0 150px;width:150px;margin:0}
+.rpt-fig img{max-height:210px}
+@media(max-width:640px){.rpt{flex-direction:column;align-items:center}.rpt-fig{flex:0 0 auto;order:-1}.rpt-body{width:100%}}
+.cardfigs{display:flex;flex-wrap:wrap;gap:22px;margin:0;justify-content:center;align-items:stretch}
+.cardfig{margin:0;width:180px;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:12px 12px 10px;display:flex;flex-direction:column;align-items:center;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.cardfig:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.5),0 0 30px rgba(47,230,199,.12)}
+.cf-photo{position:relative;width:100%;height:240px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cardfig img{display:block;width:auto;max-width:100%;height:auto;max-height:240px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.55);background:#fff;cursor:zoom-in}
+.cf-badge{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(6,9,15,.82);border:1px solid rgba(233,196,100,.45);color:var(--gold);font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:12px;letter-spacing:.03em;padding:5px 12px;border-radius:999px;white-space:nowrap;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.cardfig figcaption{color:var(--dim);font-size:12.5px;line-height:1.3;margin-top:12px;text-align:center;height:32px;overflow:hidden}
+.mvfigs .cardfig figcaption{height:45px}
+.cardfig figcaption a{color:inherit;text-decoration:none}
+.cardfig figcaption a:hover{color:var(--gold);text-decoration:underline}
+.yearslider{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-anchor:none;padding:4px 4px 14px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(255,255,255,.06)}
+.yearslider .cardfig{flex:0 0 auto;scroll-snap-align:start}
+.yearslider::-webkit-scrollbar{height:8px}
+.yearslider::-webkit-scrollbar-track{background:rgba(255,255,255,.05);border-radius:999px}
+.yearslider::-webkit-scrollbar-thumb{background:var(--gold);border-radius:999px}
+.lb{position:fixed;inset:0;background:rgba(4,7,12,.92);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:96vw;max-height:92vh;border-radius:12px;box-shadow:0 12px 50px rgba(0,0,0,.7);border:1px solid var(--border)}
+td img.thumb{width:38px;height:auto;border-radius:4px;border:1px solid var(--border);vertical-align:middle;margin-right:8px;background:#fff}
+.report{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:15px 17px;margin:12px 0;font-size:13.5px;line-height:1.65;color:var(--dim)}
+.art{max-width:720px}
+.art h1{margin-bottom:6px}
+.art-meta{color:var(--dim);font-size:13px;margin:0 0 18px}
+.art p{font-size:15.5px;line-height:1.7;color:var(--text);margin:0 0 16px}
+.art h2{font-size:19px;margin-top:34px}
+.art h3{font-family:'Chakra Petch',sans-serif;font-size:16px;margin:24px 0 6px}
+.art strong{color:#fff}
+.art a{color:var(--gold)}
+.art-link{font-size:14px!important;margin:-6px 0 22px!important}
+.art-fig{float:right;width:150px;margin:0 0 14px 22px}
+.art-fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--border);cursor:zoom-in}
+.art-fig figcaption{font-size:11.5px;color:var(--dim);text-align:center;margin-top:5px;line-height:1.35}
+.art.cards h2{clear:both}
+.art-chart{clear:both;margin:22px 0 26px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 10px 8px}
+.art-chart svg{width:100%;height:auto;display:block}
+.art-chart svg text{fill:var(--dim);font:12px 'Inter',system-ui,sans-serif}
+.art-chart svg text.v{fill:#fff;font-weight:600}
+.art-chart svg path{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-linejoin:round}
+.art-chart svg circle{fill:var(--gold);stroke:var(--surface);stroke-width:2}
+.art-chart figcaption{font-size:12.5px;color:var(--dim);text-align:center;margin-top:6px}
+@media(max-width:560px){.art-fig{width:110px;margin-left:14px}}
+.art blockquote{border-left:3px solid var(--gold);margin:0 0 16px;padding:4px 0 4px 14px;color:var(--dim)}
+.art ul{margin:0 0 16px 20px;font-size:15px;line-height:1.65}
+.art hr{border:0;border-top:1px solid var(--border);margin:26px 0}
+.art-video a,.art-back a{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px}
+.artlist{display:grid;gap:14px}
+.art-card{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--text)}
+.art-card:hover{border-color:var(--gold)}
+.art-card img{width:84px;height:auto;border-radius:6px}
+.art-card-date{font-size:12px;color:var(--dim);margin-bottom:3px}
+.art-card-title{font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:16px;line-height:1.3;margin-bottom:5px}
+.art-card-desc{font-size:13.5px;color:var(--dim);line-height:1.5}
+@media(max-width:520px){.art-fig{float:none;width:120px;margin:0 auto 16px}}
+.report b{color:var(--text)}.report .rdate{color:var(--gold);font-size:12px;letter-spacing:.6px;display:block;margin-bottom:5px}
+.report .up,.rpt-text .up{font-size:inherit}.report .down,.rpt-text .down{font-size:inherit}
+ul.plain{list-style:none;padding:0;margin:8px 0;columns:2;column-gap:24px}
+ul.plain li{margin:0 0 7px}ul.plain a{color:var(--dim);text-decoration:none;font-size:13px}ul.plain a:hover{color:var(--gold)}
+.yn-wax{font-family:Anton,Impact,sans-serif;font-size:15px;letter-spacing:.03em;color:#fff !important}.yn-wax span{color:var(--gold)}
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px;flex-wrap:wrap}.toprow .home{margin-bottom:0}
+.toprow-r{display:inline-flex;align-items:center;gap:8px}
+.yn-charts.top{display:inline-flex;align-items:center;gap:6px;font:700 13px 'Chakra Petch',sans-serif;letter-spacing:.04em;color:#0b0f12;background:var(--gold);border:1px solid var(--gold);border-radius:10px;padding:7px 11px;text-decoration:none;box-shadow:0 0 18px rgba(47,230,199,.25)}
+.yn-charts.top:hover{filter:brightness(1.08)}
+col.cch{width:6%}
+th.thch{text-align:center;font-size:10px}
+td.chc{text-align:center;padding-left:0;padding-right:0}
+a.chc{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;color:var(--gold);border:1px solid rgba(47,230,199,.45);transition:color .15s ease,border-color .15s ease,background .15s ease}
+a.chc:hover{background:var(--gold);color:#0b0f12;border-color:var(--gold)}.yn-wax.top{font-size:17px;padding:6px 10px;border:1px solid var(--border);border-radius:10px;text-decoration:none}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);color:rgba(107,160,150,.6);font-size:11.5px;line-height:1.8;text-align:center}
+.foot a{color:rgba(107,160,150,.8);text-decoration:none}
+@media(max-width:600px){ul.plain{columns:1}td,th{padding:3px 3px;font-size:12px}th{font-size:10px}.cardfig{width:calc(50% - 11px)}.yearslider .cardfig{width:130px}.cf-photo{height:170px}.cardfig img{max-height:170px}.cf-badge{font-size:10.5px;padding:4px 9px}td.raw,td.psa8,td.psa9,td.psa10{padding-left:9px}.tr{left:0;font-size:7px}col.cp{width:12%}col.ceb{width:6%}td.eb{padding-left:0;padding-right:0}}
+</style>
+<script>(function(){try{var q=new URLSearchParams(location.search);if(!q.has("moved"))return;var c=q.get("c");if(c){var inc=JSON.parse(c),cur=JSON.parse(localStorage.getItem("griffey_collection")||"{}");for(var k in inc)if(!(k in cur))cur[k]=inc[k];localStorage.setItem("griffey_collection",JSON.stringify(cur));}q.delete("moved");q.delete("c");var qs=q.toString();history.replaceState(null,"",location.pathname+(qs?"?"+qs:"")+location.hash);document.addEventListener("DOMContentLoaded",function(){var b=document.createElement("div");b.style.cssText="position:fixed;left:12px;right:12px;bottom:12px;z-index:99999;max-width:560px;margin:0 auto;background:#0a0e14;color:#fff;border:1px solid #2fe6c7;border-radius:12px;padding:12px 40px 12px 14px;font:500 14px/1.4 system-ui,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.4)";b.innerHTML="<b style=\"color:#2fe6c7\">Griffey Card Prices has a new home on 90sWax.</b> Same guide, same prices"+(c?", and your collection came with you":"")+". Update your bookmark to <b>90swax.com/griffey</b>.<button aria-label=\"Close\" style=\"position:absolute;top:8px;right:10px;background:none;border:0;color:#fff;font-size:20px;cursor:pointer\">&times;</button>";b.querySelector("button").onclick=function(){b.remove();};document.body.appendChild(b);});}catch(e){}})();</script></head>
+<body>
+<div class="wrap">
+<div class="toprow"><a class="home" href="/griffey/">◂ Griffey Card Prices — interactive guide</a><span class="toprow-r"><a class="yn-charts top" href="/griffey/charts/" title="Interactive price charts"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><polyline points="3,17 9,10 13,14 21,5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15,5 21,5 21,11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Charts</a><a class="yn-wax top" href="https://90swax.com/" title="90sWax — everything 90s baseball cards">90s<span>Wax</span></a></span></div>
+<div class="ch-wrap"><h1>Griffey Card Price Charts</h1><p class="sub">Pick a year, a set and a card. Every tracked eBay sold price for that card &mdash; raw, PSA 8, PSA 9 and PSA 10 &mdash; drawn over time. 7,408 price points across 910 cards, updated with every build. Each chart has its own link.</p><div class="ch-pick"><div><label for="chY">Year</label><select id="chY"></select></div><div><label for="chS">Set</label><select id="chS"></select></div><div><label for="chC">Card</label><select id="chC"></select></div></div><div class="ch-card" id="chRoot"><div class="ch-empty">Loading price history&hellip;</div></div><div class="ch-quick" id="chQuick"></div></div><style>
+.ch-wrap{max-width:1040px}
+.ch-pick{display:grid;grid-template-columns:120px 1fr 1.4fr;gap:10px;margin:18px 0 14px}
+.ch-pick label{display:block;font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 6px 2px}
+.ch-pick label::before{content:"\25BE";margin-right:6px;font-size:12px}
+.ch-pick select{width:100%;appearance:none;-webkit-appearance:none;background-color:#161d25;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%232fe6c7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E"),linear-gradient(180deg,#1c242d,#141a21);background-repeat:no-repeat;background-position:right 14px center,0 0;background-size:14px 9px,100% 100%;border:1.5px solid rgba(47,230,199,.55);border-radius:12px;color:#fff;font:700 15px 'Chakra Petch',sans-serif;padding:13px 40px 13px 14px;cursor:pointer;box-shadow:0 0 0 1px rgba(47,230,199,.08),0 6px 18px rgba(0,0,0,.35);transition:border-color .15s,box-shadow .15s,transform .1s}
+.ch-pick select:hover{border-color:var(--gold);box-shadow:0 0 0 3px rgba(47,230,199,.14),0 0 22px rgba(47,230,199,.18);transform:translateY(-1px)}
+.ch-pick select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(47,230,199,.25),0 0 26px rgba(47,230,199,.25)}
+.ch-pick select option{background:#141a21;color:#fff}
+.ch-quick{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.ch-quick span{font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);align-self:center;margin-right:4px}
+.ch-quick button{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 12px;font:500 12.5px 'Inter Tight',sans-serif;cursor:pointer}
+.ch-quick button:hover{border-color:var(--gold);color:var(--gold)}
+.ch-card{background:linear-gradient(180deg,#141a21 0%,#0e1318 100%);border:1px solid var(--border);border-radius:16px;padding:18px 18px 10px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.ch-head{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start}
+.ch-title{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:20px;line-height:1.2;margin:0}
+.ch-title small{display:block;font-weight:500;font-size:12.5px;color:var(--dim);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.ch-thumb{width:54px;height:auto;border-radius:6px;border:1px solid var(--border);cursor:zoom-in}
+.ch-stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.ch-stat{flex:1 1 150px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:10px 12px;position:relative;overflow:hidden}
+.ch-stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c)}
+.ch-stat .g{font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.ch-stat .p{font-family:Anton,sans-serif;font-size:30px;line-height:1.05;color:var(--gold);letter-spacing:.01em;margin:3px 0 2px}
+.ch-stat .d{font-size:12px;color:var(--dim)}
+.ch-stat .d b{color:var(--text);font-weight:600}
+.ch-stat.off{opacity:.38}
+.ch-ctl{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin:10px 0 4px}
+.ch-tog,.ch-rng{display:flex;gap:6px;flex-wrap:wrap}
+.ch-tog button,.ch-rng button,.ch-copy{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 12px;font:600 12px 'Chakra Petch',sans-serif;letter-spacing:.06em;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.ch-tog button i{width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c);display:inline-block}
+.ch-tog button{border-color:var(--c);background:color-mix(in srgb,var(--c) 16%,transparent)}
+.ch-tog button.off{opacity:.45;border-color:var(--border);background:transparent}.ch-tog button.off i{box-shadow:none;background:var(--dim)}
+.ch-rng button.on{background:var(--gold);border-color:var(--gold);color:#0b0f12;font-weight:700}
+.ch-copy:hover,.ch-rng button:hover{border-color:var(--gold)}
+.ch-svgwrap{position:relative;margin-top:6px}
+.ch-svg{width:100%;height:auto;display:block}
+.ch-tip{position:absolute;pointer-events:none;background:#0b0f12;border:1px solid var(--gold);border-radius:10px;padding:8px 11px;font-size:12.5px;line-height:1.4;color:var(--text);white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translate(-50%,-115%);opacity:0;transition:opacity .12s}
+.ch-tip b{font-family:Anton,sans-serif;font-size:19px;color:var(--gold);letter-spacing:.02em;display:block}
+.ch-tip .tg{font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.ch-note{font-size:12px;color:var(--dim);margin:8px 2px 4px;line-height:1.5}
+@media(max-width:640px){.ch-note{font-size:11px}}
+.ch-empty{padding:60px 20px;text-align:center;color:var(--dim)}
+.ch-top{display:grid;grid-template-columns:1fr 190px;gap:20px;align-items:start}
+.ch-top.noimg{grid-template-columns:1fr}
+.ch-left{min-width:0}
+.ch-top:not(.noimg) .ch-stats{display:grid;grid-template-columns:1fr 1fr}
+.ch-top:not(.noimg) .ch-stat{flex:none}
+.ch-photo.cardfig{width:190px;margin:0;padding:10px 10px 7px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px}
+.ch-photo.cardfig img{width:100%;max-height:none;border-radius:8px;box-shadow:0 12px 36px rgba(0,0,0,.55)}
+.ch-photo.cardfig figcaption{height:auto;margin-top:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-family:'Chakra Petch',sans-serif}
+@media(max-width:760px){.ch-top{grid-template-columns:1fr}.ch-photo.cardfig{width:180px;margin:0 auto 4px;order:-1}}
+.ch-sep{width:1px;height:18px;background:var(--border);align-self:center;margin:0 4px}
+@media(max-width:640px){.ch-pick{grid-template-columns:1fr 1fr}.ch-pick div:last-child{grid-column:1/-1}.ch-stat .p{font-size:24px}.ch-title{font-size:17px}}
+</style><script>
+(function(){
+var COL={psa10:'#ff4d4d',psa9:'#4da3ff',psa8:'#ffd23d',raw:'#3ddc84'},LBL={psa10:'PSA 10',psa9:'PSA 9',psa8:'PSA 8',raw:'Raw'},ORDER=['psa10','psa9','psa8','raw'];
+var D=null,yearSel=document.getElementById('chY'),setSel=document.getElementById('chS'),cardSel=document.getElementById('chC'),root=document.getElementById('chRoot'),quick=document.getElementById('chQuick');
+var on={psa10:true,psa9:true,psa8:true,raw:false},range='all',scale='auto',cur=null;
+function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
+function fmtD(s){var d=new Date(s+'T12:00:00');return d.toLocaleDateString('en-US',{month:'short',day:'numeric'});}
+function fmtMY(s){var d=new Date(s+'T12:00:00');return d.toLocaleDateString('en-US',{month:'short',year:'numeric'});}
+function fmtDY(s){var d=new Date(s+'T12:00:00');return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+function opt(sel,items,val){sel.innerHTML='';items.forEach(function(it){var o=document.createElement('option');o.value=it.v;o.textContent=it.t;if(it.v===val)o.selected=true;sel.appendChild(o);});}
+function findYear(y){for(var i=0;i<D.years.length;i++)if(String(D.years[i].y)===String(y))return D.years[i];return D.years[0];}
+function findSet(Y,s){for(var i=0;i<Y.sets.length;i++)if(Y.sets[i].s===s)return Y.sets[i];return Y.sets[0];}
+function findCard(S,c){for(var i=0;i<S.cards.length;i++)if(S.cards[i].s===c)return S.cards[i];return S.cards[0];}
+function points(card){var n=0;for(var g in card.h)n+=card.h[g].length;return n;}
+function pick(y,s,c,push){var Y=findYear(y),S=findSet(Y,s),C=findCard(S,c);cur={Y:Y,S:S,C:C};
+  opt(yearSel,D.years.map(function(x){return{v:String(x.y),t:String(x.y)};}),String(Y.y));
+  opt(setSel,Y.sets.map(function(x){return{v:x.s,t:x.n};}),S.s);
+  opt(cardSel,S.cards.map(function(x){return{v:x.s,t:x.n+'  ('+points(x)+')'};}),C.s);
+  var h='#'+Y.y+'/'+S.s+'/'+C.s;if(location.hash!==h){if(push)history.pushState(null,'',h);else history.replaceState(null,'',h);}
+  document.title=Y.y+' '+S.n+' '+C.n+' Price Chart | Griffey Card Prices';
+  render();}
+function logTicks(lo,hi){var out=[],p=Math.pow(10,Math.floor(Math.log10(lo)));while(p<=hi){[1,2,5].forEach(function(m){var v=m*p;if(v>=lo&&v<=hi)out.push(v);});p*=10;}if(out.length>8)out=out.filter(function(v,i){return i%2===0;});return out;}
+function niceTicks(lo,hi,n){var span=hi-lo||1,raw=span/n,p=Math.pow(10,Math.floor(Math.log10(raw))),m=raw/p,step=(m<1.5?1:m<3?2:m<7?5:10)*p,a=Math.floor(lo/step)*step,out=[];for(var v=a;v<=hi+step*0.5;v+=step)out.push(v);return out;}
+function render(){var C=cur.C,Y=cur.Y,S=cur.S;
+  var series=[],allPts=[],minT=Infinity,maxT=-Infinity,lastT=-Infinity;
+  ORDER.forEach(function(g){var a=C.h[g];if(!a)return;a.forEach(function(p){var t=Date.parse(p[0]);if(t>lastT)lastT=t;});});
+  var cutoff=range==='all'?-Infinity:lastT-(range==='3m'?92:31)*864e5;
+  ORDER.forEach(function(g){var a=C.h[g];if(!a)return;var pts=a.map(function(p){return{t:Date.parse(p[0]),d:p[0],v:p[1],g:g};}).filter(function(p){return p.t>=cutoff;});
+    if(!pts.length&&a.length){var last=a[a.length-1];pts=[{t:Date.parse(last[0]),d:last[0],v:last[1],g:g}];}
+    if(!pts.length)return;series.push({g:g,pts:pts,all:a});if(on[g]){pts.forEach(function(p){allPts.push(p);if(p.t<minT)minT=p.t;if(p.t>maxT)maxT=p.t;});}});
+  var head='<div class="ch-head"><h2 class="ch-title"><small>'+Y.y+' '+esc(S.n)+'</small>'+esc(C.n)+'</h2></div>';
+  var photo=C.img?'<figure class="ch-photo cardfig"><img src="/griffey/img/cards/'+C.img+'" alt="'+esc(Y.y+' '+S.n+' '+C.n+' Ken Griffey Jr.')+'"><figcaption>Tap to zoom</figcaption></figure>':'';
+  var stats='<div class="ch-stats">'+series.map(function(s){var a=s.all,first=a[0][1],last=a[a.length-1][1],ch=first?Math.round((last-first)/first*100):0,arrow=ch>0?'&#9650;':ch<0?'&#9660;':'&#8212;';
+    return '<div class="ch-stat'+(on[s.g]?'':' off')+'" style="--c:'+COL[s.g]+'"><div class="g">'+LBL[s.g]+'</div><div class="p">'+money(last)+'</div><div class="d">'+arrow+' <b>'+Math.abs(ch)+'%</b> since '+fmtMY(a[0][0])+'</div></div>';}).join('')+'</div>';
+  var vv=allPts.map(function(p){return p.v;}).filter(function(v){return v>0;}),vmin=vv.length?Math.min.apply(null,vv):0,vmax=vv.length?Math.max.apply(null,vv):0,useLog=scale==='log'||(scale==='auto'&&vmin>0&&vmax/vmin>10);
+  var ctl='<div class="ch-ctl"><div class="ch-tog">'+series.map(function(s){return '<button data-g="'+s.g+'" class="'+(on[s.g]?'':'off')+'" style="--c:'+COL[s.g]+'"><i></i>'+LBL[s.g]+'</button>';}).join('')+'</div>'+
+    '<div class="ch-rng"><button data-sc="lin" class="'+(useLog?'':'on')+'" title="Linear scale">$</button><button data-sc="log" class="'+(useLog?'on':'')+'" title="Log scale - shows every grade clearly">LOG</button><span class="ch-sep"></span><button data-r="1m" class="'+(range==='1m'?'on':'')+'">1M</button><button data-r="3m" class="'+(range==='3m'?'on':'')+'">3M</button><button data-r="all" class="'+(range==='all'?'on':'')+'">ALL</button><button class="ch-copy" id="chCopy">&#128279; Copy link</button></div></div>';
+  var narrow=window.innerWidth<640,W=narrow?620:1000,H=narrow?520:430,L=narrow?58:70,R=narrow?62:86,T=22,B=44,iw=W-L-R,ih=H-T-B,svg='';
+  if(!allPts.length){svg='<div class="ch-empty">No tracked prices for the selected grades yet.</div>';}
+  else{var vals=allPts.map(function(p){return p.v;}),lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals);if(lo===hi){lo=lo*0.9;hi=hi*1.1;}
+    if(useLog){lo=Math.max(1,lo/1.18);hi=hi*1.18;}else{var pad=(hi-lo)*0.12;lo=Math.max(0,lo-pad);hi=hi+pad;}
+    if(maxT===minT){minT-=864e5*3;maxT+=864e5*3;}
+    var x=function(t){return L+(t-minT)/(maxT-minT)*iw;},y=function(v){return useLog?T+ih-(Math.log(v)-Math.log(lo))/(Math.log(hi)-Math.log(lo))*ih:T+ih-(v-lo)/(hi-lo)*ih;};
+    var yt=useLog?logTicks(lo,hi):niceTicks(lo,hi,5),grid='';yt.forEach(function(v){if(v<lo||v>hi)return;var yy=y(v);grid+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+yy+'" y2="'+yy+'" stroke="rgba(255,255,255,.07)"/><text x="'+(L-10)+'" y="'+(yy+4)+'" text-anchor="end" class="ax">'+money(v)+'</text>';});
+    var span=maxT-minT,d0=new Date(minT),m=new Date(d0.getFullYear(),d0.getMonth()+1,1),xt='';var monthly=span>45*864e5;
+    if(monthly){while(m.getTime()<=maxT){var xx=x(m.getTime());xt+='<line x1="'+xx+'" x2="'+xx+'" y1="'+T+'" y2="'+(T+ih)+'" stroke="rgba(255,255,255,.05)"/><text x="'+xx+'" y="'+(H-14)+'" text-anchor="middle" class="ax">'+m.toLocaleDateString('en-US',{month:'short'})+(m.getMonth()===0?' '+m.getFullYear():'')+'</text>';m=new Date(m.getFullYear(),m.getMonth()+1,1);}}
+    else{var n=6;for(var i=0;i<=n;i++){var tt=minT+span*i/n,xx2=x(tt);xt+='<text x="'+xx2+'" y="'+(H-14)+'" text-anchor="middle" class="ax">'+fmtD(new Date(tt).toISOString().slice(0,10))+'</text>';}}
+    var defs='<defs><filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'+
+      ORDER.map(function(g){return '<linearGradient id="fill-'+g+'" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="'+COL[g]+'" stop-opacity=".28"/><stop offset="1" stop-color="'+COL[g]+'" stop-opacity="0"/></linearGradient>';}).join('')+'</defs>';
+    var lines='',dots='',top=null,labels=[],visibleCount=0;series.forEach(function(s){if(on[s.g]){visibleCount++;if(!top)top=s.g;}});
+    series.slice().reverse().forEach(function(s){if(!on[s.g])return;var p=s.pts,c=COL[s.g],d=p.map(function(q,i){return (i?'L':'M')+x(q.t).toFixed(1)+' '+y(q.v).toFixed(1);}).join(' ');
+      if(p.length>1)lines+='<path class="ln" d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+(s.g===top?3:2.2)+'" stroke-linejoin="round" stroke-linecap="round"'+(s.g==='raw'?' stroke-dasharray="6 6"':'')+' filter="url(#glow)" pathLength="1"/>';
+      p.forEach(function(q){dots+='<circle class="pt" data-g="'+s.g+'" data-d="'+q.d+'" data-v="'+q.v+'" cx="'+x(q.t).toFixed(1)+'" cy="'+y(q.v).toFixed(1)+'" r="'+(s.g===top?4.2:3.4)+'" fill="#0b0f12" stroke="'+c+'" stroke-width="2.2"/>';});
+      var lastp=p[p.length-1];labels.push({y:y(lastp.v),x:x(lastp.t)+9,c:c,t:money(lastp.v)});});
+    labels.sort(function(a,b){return a.y-b.y;});for(var li=1;li<labels.length;li++){if(labels[li].y-labels[li-1].y<15)labels[li].y=labels[li-1].y+15;}
+    labels.forEach(function(l){dots+='<text x="'+l.x.toFixed(1)+'" y="'+(l.y+4).toFixed(1)+'" class="lv" fill="'+l.c+'">'+l.t+'</text>';});
+    svg='<div class="ch-svgwrap"><svg class="ch-svg" viewBox="0 0 '+W+' '+H+'" style="aspect-ratio:'+W+'/'+H+'" id="chSvg">'+defs+'<style>.ax{font:500 '+(narrow?15:12)+'px "Inter Tight",sans-serif;fill:#8b94a3}.lv{font:600 '+(narrow?14:12)+'px "Chakra Petch",sans-serif;paint-order:stroke;stroke:#0b0f12;stroke-width:4px}.ln{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s cubic-bezier(.4,0,.2,1) forwards}@keyframes draw{to{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.ln{animation:none;stroke-dasharray:none;stroke-dashoffset:0}}.pt{transition:r .12s}.pt.hi{r:6.5}</style>'+grid+xt+'<line x1="'+L+'" x2="'+(W-R)+'" y1="'+(T+ih)+'" y2="'+(T+ih)+'" stroke="rgba(255,255,255,.18)"/>'+lines+'<line id="chX" x1="0" x2="0" y1="'+T+'" y2="'+(T+ih)+'" stroke="rgba(47,230,199,.45)" stroke-dasharray="3 4" style="display:none"/>'+dots+'</svg><div class="ch-tip" id="chTip"></div></div>';}
+  root.innerHTML='<div class="ch-top'+(C.img?'':' noimg')+'"><div class="ch-left">'+head+stats+ctl+'</div>'+photo+'</div>'+svg+'<p class="ch-note">Historical eBay sales data, collected since July 2026.</p>';
+  root.querySelectorAll('.ch-tog button').forEach(function(b){b.onclick=function(){var g=b.getAttribute('data-g');on[g]=!on[g];if(!ORDER.some(function(k){return on[k]&&C.h[k];}))on[g]=true;render();};});
+  root.querySelectorAll('.ch-rng button[data-r]').forEach(function(b){b.onclick=function(){range=b.getAttribute('data-r');render();};});
+  root.querySelectorAll('.ch-rng button[data-sc]').forEach(function(b){b.onclick=function(){scale=b.getAttribute('data-sc');render();};});
+  var cp=document.getElementById('chCopy');if(cp)cp.onclick=function(){try{navigator.clipboard.writeText(location.href);cp.textContent='Copied';setTimeout(function(){cp.innerHTML='&#128279; Copy link';},1400);}catch(e){}};
+  var sv=document.getElementById('chSvg'),tip=document.getElementById('chTip'),xl=document.getElementById('chX');
+  if(sv){var pts=[].slice.call(sv.querySelectorAll('.pt')),last=null;
+    sv.addEventListener('mousemove',function(e){var r=sv.getBoundingClientRect(),sx=W/r.width,mx=(e.clientX-r.left)*sx,my=(e.clientY-r.top)*(H/r.height),best=null,bd=1e9;
+      pts.forEach(function(p){var dx=p.cx.baseVal.value-mx,dy=p.cy.baseVal.value-my,dd=dx*dx+dy*dy*0.35;if(dd<bd){bd=dd;best=p;}});
+      if(!best||bd>60*60)return hide();if(best!==last){if(last)last.classList.remove('hi');best.classList.add('hi');last=best;}
+      var cx=best.cx.baseVal.value,cy=best.cy.baseVal.value;xl.setAttribute('x1',cx);xl.setAttribute('x2',cx);xl.style.display='';
+      tip.innerHTML='<span class="tg">'+LBL[best.getAttribute('data-g')]+' &middot; '+fmtDY(best.getAttribute('data-d'))+'</span><b>'+money(+best.getAttribute('data-v'))+'</b>';
+      tip.style.left=(cx/sx)+'px';tip.style.top=(cy/(H/r.height))+'px';tip.style.opacity=1;});
+    var hide=function(){tip.style.opacity=0;xl.style.display='none';if(last){last.classList.remove('hi');last=null;}};sv.addEventListener('mouseleave',hide);}
+}
+function fromHash(push){var m=(location.hash||'').replace(/^#/,'').split('/');if(m.length===3&&m[0])return pick(m[0],m[1],m[2],push);
+  var best=null,bn=-1;D.years.forEach(function(Y){Y.sets.forEach(function(S){S.cards.forEach(function(C){var n=points(C);if(n>bn){bn=n;best={y:Y.y,s:S.s,c:C.s};}});});});pick(best.y,best.s,best.c,false);}
+yearSel.onchange=function(){var Y=findYear(yearSel.value);pick(Y.y,Y.sets[0].s,Y.sets[0].cards[0].s,true);};
+setSel.onchange=function(){var Y=findYear(yearSel.value),S=findSet(Y,setSel.value);pick(Y.y,S.s,S.cards[0].s,true);};
+cardSel.onchange=function(){pick(yearSel.value,setSel.value,cardSel.value,true);};
+window.addEventListener('hashchange',function(){fromHash(false);});
+var wasNarrow=window.innerWidth<640,rsT;window.addEventListener('resize',function(){clearTimeout(rsT);rsT=setTimeout(function(){var n=window.innerWidth<640;if(n!==wasNarrow){wasNarrow=n;if(cur)render();}},150);});
+fetch('/griffey/charts/data.json').then(function(r){return r.json();}).then(function(j){D=j;
+  var all=[];D.years.forEach(function(Y){Y.sets.forEach(function(S){S.cards.forEach(function(C){all.push({n:points(C),Y:Y,S:S,C:C});});});});
+  all.sort(function(a,b){return b.n-a.n;});quick.innerHTML='<span>Most tracked</span>'+all.slice(0,8).map(function(a){return '<button data-y="'+a.Y.y+'" data-s="'+a.S.s+'" data-c="'+a.C.s+'">'+a.Y.y+' '+esc(a.S.n)+' '+esc(a.C.n)+'</button>';}).join('');
+  quick.querySelectorAll('button').forEach(function(b){b.onclick=function(){pick(b.getAttribute('data-y'),b.getAttribute('data-s'),b.getAttribute('data-c'),true);};});
+  fromHash(false);}).catch(function(){root.innerHTML='<div class="ch-empty">Could not load chart data.</div>';});
+})();
+</script>
+<div class="bottomnav"><div class="bn-label">Browse the guide</div><nav class="yearnav"><a href="/griffey/1990/">1990</a><a href="/griffey/1991/">1991</a><a href="/griffey/1992/">1992</a><a href="/griffey/1993/">1993</a><a href="/griffey/1994/">1994</a><a href="/griffey/1995/">1995</a><a href="/griffey/1996/">1996</a><a href="/griffey/1997/">1997</a><a href="/griffey/1998/">1998</a><a href="/griffey/1999/">1999</a><a href="/griffey/charts/">Charts</a><a href="/griffey/most-valuable/">Top 25 Sales</a><a href="/griffey/biggest-movers/">Biggest Movers</a><a href="/griffey/how-much-are-griffey-cards-worth/">Card Values</a><a href="/griffey/articles/">Articles</a><a class="yn-wax" href="https://90swax.com/" title="90sWax — everything 90s baseball cards">90s<span>Wax</span></a></nav></div>
+<div class="foot">Prices updated November 21, 2026 from real eBay sold listings · Not affiliated with PSA, eBay, or Topps · Built for collectors, by a collector<br>A <a href="https://90swax.com/" style="font-weight:600">90sWax</a> site · <a href="/griffey/">90swax.com/griffey</a> · <a href="/griffey/site-map/">Site Map</a> · <a href="https://www.youtube.com/@90sWax" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/griffeycardprices/" target="_blank" rel="noopener">Instagram</a></div>
+</div>
+<div class="lb" id="cardLb"><img alt=""></div>
+<script>(function(){var lb=document.getElementById("cardLb"),li=lb.firstElementChild;document.addEventListener("click",function(e){var t=e.target;if(t.tagName==="IMG"&&t.closest&&t.closest(".cardfig")){li.src=t.src;li.alt=t.alt;lb.classList.add("open");trackEvent("card_photo_open",{card_name:t.alt||"",page_path:location.pathname});}else if(lb.classList.contains("open")){lb.classList.remove("open");}});document.addEventListener("keydown",function(e){if(e.key==="Escape")lb.classList.remove("open");});})();</script>
+<script>document.querySelectorAll(".tblwrap").forEach(function(w){var head=w.querySelector(".theadwrap"),body=w.querySelector(".scrollx");if(head&&body)body.addEventListener("scroll",function(){head.scrollLeft=body.scrollLeft;},{passive:true});});</script>
+</body></html>
